@@ -1,0 +1,31 @@
+name = "hello"
+version = "0.1.0"
+license = "MIT"
+author = "Jane Programmer"
+maintainer = "jane@example.com"
+copyright = "2020 Jane Programmer"
+#find . -name *.mod | xargs rm -f && RM -f -R build && fpm run
+#find . -name *.mod | xargs rm -f && fpm run
+
+[build]
+auto-executables = false
+auto-examples = false
+auto-tests = false
+
+[[ executable ]]  
+source-dir="app1"  
+main="a.f90"       
+name="app1_exe2"
+[[ executable ]] 
+source-dir="app2"   
+main="b.f90"        
+name="app2_exe"
+[[ executable ]] 
+source-dir="app2"   
+main="c.f90"        
+name="app3_exe"
+
+[library]
+source-dir="lib"    #默认是"src"
+
+

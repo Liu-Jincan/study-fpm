@@ -1,0 +1,6 @@
+name = "hello"
+version = "0.1.0"
+license = "MIT"
+author = "Jane Programmer"
+maintainer = "jane@example.com"
+copyright = "2020 Jane Programmer"

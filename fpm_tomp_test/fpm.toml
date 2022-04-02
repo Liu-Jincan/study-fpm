@@ -1,0 +1,33 @@
+name = "hello"
+version = "0.1.0"
+license = "MIT"
+author = "Jane Programmer"
+maintainer = "jane@example.com"
+copyright = "2020 Jane Programmer"
+
+[library]
+source-dir="src"
+
+[build]
+auto-executables = false
+auto-examples = false
+auto-tests = false
+
+[[ executable ]]
+#name="math_constants1"
+#source-dir="app"
+#main="main.f90"
+
+name="math_constants2"
+source-dir="app"
+main="main2.f90"
+
+[[ executable ]]
+name="math_constants3"
+source-dir="app"
+main="main3.f90"
+
+[[ test ]]
+name="runTests2"
+source-dir="test"
+main="main2.f90"

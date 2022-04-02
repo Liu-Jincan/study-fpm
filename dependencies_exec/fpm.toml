@@ -1,0 +1,32 @@
+name = "dependencies"
+version = "0.1.0"
+license = "license"
+author = "Jane Doe"
+maintainer = "jane.doe@example.com"
+copyright = "Copyright 2022, Jane Doe"
+
+[library]
+source-dir="src"
+build-script="my_build_script"
+
+[build]
+auto-executables = false
+auto-tests = false
+auto-examples = false
+
+
+[install]
+library = false
+
+
+[[ executable ]]
+name="math_constants"
+source-dir="app"
+main="main.f90"
+[executable.dependencies]
+helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git" }
+
+# [[ test ]]
+# [[ example ]]
+
+
