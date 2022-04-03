@@ -1,0 +1,8 @@
+[dependencies]
+version = "0.1.0"
+proj-dir = "."
+[helloff]
+version = "0"
+proj-dir = "build/dependencies/helloff"
+git = "https://gitlab.com/everythingfunctional/helloff.git"
+rev = "e0b522dd53e0feb25b951d0c3722f64d64b55d46"
